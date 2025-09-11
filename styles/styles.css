@@ -1,26 +1,69 @@
-nav {
-  background-color: darkblue;
-  padding: 10px;
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header, footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
 }
 
 nav a {
-  color: white;
-  display: block;
-  padding: 20px;
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
 }
 
-h1 {
-  color: darkblue;
+/* Limit main content width */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
 }
 
-img {
-  width: 150px;
-  height: auto;
-  border: 1px solid black;
-  padding: 2px;
-  box-shadow: 0 0 30px gray;
+/* Profile image styling */
+main img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
 }
 
+/* Paragraph spacing */
 p {
-  padding: 10px;
+    padding: 0;
+}
+
+/* Aside section styling */
+aside {
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;
+    border: 2px solid #333;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    color: #222;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Aside image */
+aside img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 2rem;
+    border-top: 2px solid #444;
+    text-align: center;
+    padding: 1rem;
 }
