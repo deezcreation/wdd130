@@ -1,49 +1,86 @@
+/* General page styling */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     line-height: 1.6;
 }
 
-header, footer {
-   background-color:#333;
-   color:#fff;
-   text-color:#fff;
-   padding: 10px;
-   text-align: center;
-   font-size: 1.5rem;
+/* Header and footer */
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
 }
 
-main {
-    width: 400px;
-    margin: 0 auto;
+/* Navigation bar */
+nav {
+    background-color: #333;
+    padding: 1rem;
 }
 
+nav a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    display: block;
+    text-decoration: none;
+}
+
+/* Headings */
 h1 {
-    margin: 10px;
+    color: #333;
+}
+
+/* Limit main content width */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
     text-align: center;
 }
 
-h2 {
-    border-bottom: 1px solid #222;
-}
-
-img {
-    width: 100%;
+/* Profile image styling */
+main img {
+    width: 150px;
     height: auto;
-    box-shadow: 0 0 30px #333;
+    border: 3px solid #333;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-section{
-    margin: 20px 0;
-    border: 1px solid rgb(0 0 0/10%);
-    padding: 10px;
-    background-color: #ddd;
-    font-size: .9rem;
+/* Paragraph spacing */
+p {
+    padding: 0;
 }
 
-section p {
-    margin: 10px;
+/* Aside section styling */
+aside {
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;
+    border: 2px solid #333;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    color: #222;
+    text-align: center;
+    border-radius: 10px;
 }
 
+/* Aside image */
+aside img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+/* Footer styling */
 footer {
-    font-size: .9rem;
+    margin-top: 2rem;
+    border-top: 2px solid #333;
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
 }

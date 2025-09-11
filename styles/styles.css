@@ -6,17 +6,30 @@ body {
     line-height: 1.6;
 }
 
-header, footer {
+/* Header and footer */
+header {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 1rem;
 }
 
+/* Navigation bar */
+nav {
+    background-color: #333;
+    padding: 1rem;
+}
+
 nav a {
     color: #fff;
-    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    display: block;
     text-decoration: none;
+}
+
+/* Headings */
+h1 {
+    color: #333;
 }
 
 /* Limit main content width */
@@ -31,7 +44,9 @@ main {
 main img {
     width: 150px;
     height: auto;
-    border-radius: 50%;
+    border: 2px solid #333;
+    padding: 0px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 /* Paragraph spacing */
@@ -63,7 +78,9 @@ aside img {
 /* Footer styling */
 footer {
     margin-top: 2rem;
-    border-top: 2px solid #444;
+    border-top: 2px solid #333;
     text-align: center;
     padding: 1rem;
+    background: #333;
+    color: #fff;
 }
