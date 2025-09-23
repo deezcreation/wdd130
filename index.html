@@ -5,46 +5,81 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desiree Timothy | WDD 130</title>
-
-    <!-- New meta tags -->
     <meta name="description"
         content="Desiree Timothy | WDD 130 | Web Development student page with profile, coursework, and personal interests.">
     <meta name="author" content="Desiree Timothy">
-
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-    <!-- Header with navigation -->
+    <!-- Header with semantic navigation -->
     <header>
         <nav>
-            <a href="#">Home</a>
-            <a href="wwr/">Rafting Website</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="wwr/">Rafting Website</a></li>
+                <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Main content -->
-    <main>
-        <h1>Desiree Timothy | WDD 130</h1>
-        <img src="images/profile.jpg" alt="Hello, my name is Desiree Timothy" width="200">
-        <p>
-            Hello! My name is Desiree Timothy and I am from East London, South Africa.
-            I am passionate about web development and enjoy creating interactive websites.
-            In my free time, I like gaming, playing soccer, and exploring new technologies. I am
-            also passionate about martial arts and poetry and enjoy watching anime.
-        </p>
-    </main>
+    <!-- Main content using Grid -->
+    <main class="content">
+        <!-- South Africa card -->
+        <aside class="card">
+            <h2>South Africa</h2>
+            <img src="images/south-africa.jpg" alt="Flag and scenery of South Africa">
+            <p>
+                South Africa is known as the "Rainbow Nation," rich in cultural diversity, natural beauty,
+                and wildlife. From Table Mountain to Kruger National Park, it offers stunning landscapes
+                and a vibrant history.
+            </p>
+        </aside>
 
-    <!-- Aside content -->
-    <aside>
-        <h2>South Africa</h2>
-        <img src="images/south-africa.jpg" alt="Flag and scenery of South Africa">
-        <p>
-            South Africa is known as the "Rainbow Nation," rich in cultural diversity, natural beauty,
-            and wildlife. From Table Mountain to Kruger National Park, it offers stunning landscapes
-            and a vibrant history.
-        </p>
-    </aside>
+        <!-- Profile section -->
+        <section class="profile">
+            <h1>Desiree Timothy | WDD 130</h1>
+
+            <div class="profile-inner">
+                <img src="images/profile.jpg" alt="Photo of Desiree Timothy" class="profile-pic">
+
+                <div class="profile-text">
+                    <p>
+                        Hello! My name is Desiree Timothy and I am from East London, South Africa.
+                        I am passionate about web development and enjoy creating interactive websites.
+                        In my free time, I like gaming, playing soccer, and exploring new technologies.
+                        I am also passionate about martial arts and poetry and enjoy watching anime.
+                    </p>
+                </div>
+            </div>
+
+            <!-- List of Favorite Temples -->
+            <div class="temple-links">
+                <h2>Favorite Temples</h2>
+                <ul class="links">
+                    <li>
+                        <a href="https://www.churchofjesuschrist.org/temples/details/johannesburg-south-africa-temple"
+                            target="_blank" rel="noopener noreferrer">
+                            Johannesburg South Africa Temple
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.churchofjesuschrist.org/temples/details/salt-lake-temple" target="_blank"
+                            rel="noopener noreferrer">
+                            Salt Lake Temple
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.churchofjesuschrist.org/temples/details/rome-italy-temple" target="_blank"
+                            rel="noopener noreferrer">
+                            Rome Italy Temple
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
