@@ -35,17 +35,35 @@ nav, p, section, article {
   padding: 8px;
 }
 
-/* Header */
+/* Header - using Grid */
 header {
   background-color: var(--primary-color);
   color: var(--accent2-color);
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* logo + nav */
   align-items: center;
-  justify-content: space-between;
+  padding: 1rem 2rem;
 }
 
 header img {
   height: 60px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid #fff;
 }
 
 /* Hero Section */
@@ -78,12 +96,46 @@ header img {
   background-color: rgba(255, 255, 255, 0.85);
   padding: 16px;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
 }
 
 .hero article img {
   float: right;
   width: 125px;
   margin-left: 12px;
+}
+
+/* History Section */
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.history-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Adventures Section */
+.adventure-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.adventure-gallery figure {
+  margin: 0;
+  text-align: center;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  border-radius: 8px;
 }
 
 /* Footer */
@@ -94,12 +146,19 @@ footer {
   padding: 16px;
 }
 
-.socialmedia a {
-  text-decoration: none;
-  margin: 0 8px;
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.socialmedia img {
+.social-icons a {
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+.social-icons img {
   width: 32px;
   height: 32px;
 }
+
