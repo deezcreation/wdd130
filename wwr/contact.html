@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Whitewater Thrills</title>
+  <meta name="description" content="Get in touch with Whitewater Thrills for reservations, inquiries, or suggestions. Find our contact info, location, and team.">
+  <meta name="author" content="Desiree Timothy">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body class="contact-page">
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">
+      <img src="images/logo.png" alt="Whitewater Thrills Logo">
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Contact Info + Map -->
+    <section class="contact-top">
+      <div class="company-info">
+        <h2>White Water Rafting Company</h2>
+        <p>123 Main River Street<br>Kolob, Colorado</p>
+        <p>+1 999 999 9999</p>
+        <p>info@whitewater.com</p>
+      </div>
+
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375783.618120906!2d-116.06844806071084!3d34.28262724253379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8737e89b70298547%3A0x165dff811dd0901e!2sColorado%20River!5e0!3m2!1sen!2sza!4v1759355418089!5m2!1sen!2sza"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <fieldset>
+          <legend>Message Purpose</legend>
+          <label><input type="radio" name="purpose" value="General Inquiry"> General Inquiry</label><br>
+          <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label><br>
+          <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+        </fieldset>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Type here"></textarea>
+
+        <label>
+          <input type="checkbox" name="newsletter">
+          Please subscribe me to the monthly newsletter
+        </label>
+
+        <button type="submit">Get in Touch!</button>
+      </form>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+      <h2>We Are Here to Serve You</h2>
+      <div class="team-grid">
+        <figure>
+          <img src="images/employee1.jpg" alt="John Dodger - Reservations Manager">
+          <figcaption>John Dodger - Reservations Manager</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpg" alt="Sarah Smith - River Guide">
+          <figcaption>Sarah Smith - River Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpg" alt="Michael Lee - Safety Coordinator">
+          <figcaption>Michael Lee - Safety Coordinator</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Whitewater Thrills | Desiree Timothy</p>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">
+          <img src="images/facebook.png" alt="Facebook logo">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="images/twitter.png" alt="Twitter logo">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="images/instagram.png" alt="Instagram logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
